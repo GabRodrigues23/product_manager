@@ -1,5 +1,7 @@
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:product_manager/modules/home/view/home_page.dart';
+import 'package:product_manager/modules/list/list_module.dart';
+import 'package:product_manager/modules/register/register_module.dart';
 
 class HomeModule extends Module {
   @override
@@ -7,5 +9,7 @@ class HomeModule extends Module {
     super.routes(r);
 
     r.child('/', child: (_) => HomePage());
+    r.module('/list', module: ListModule());
+    r.module('/register', module: RegisterModule());
   }
 }

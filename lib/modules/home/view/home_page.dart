@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -32,7 +33,9 @@ class HomePage extends StatelessWidget {
                 ),
                 SizedBox(height: 40),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Modular.to.pushNamed('/list');
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: theme.primary,
                     foregroundColor: theme.onPrimary,
@@ -41,7 +44,9 @@ class HomePage extends StatelessWidget {
                   child: Text('Products List', style: TextStyle(fontSize: 20)),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Modular.to.pushNamed('/register');
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: theme.primary,
                     foregroundColor: theme.onPrimary,
