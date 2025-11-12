@@ -1,4 +1,3 @@
-import 'package:asp/asp.dart';
 import 'package:product_manager/modules/register/model/category_enum.dart';
 
 class ProductModel {
@@ -11,8 +10,6 @@ class ProductModel {
     required this.description,
     required this.category,
   });
-
-  final productAom = Atom<ProductModel?>;
 
   @override
   String toString() {
